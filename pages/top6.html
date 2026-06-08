@@ -1,26 +1,38 @@
+<!--
+    Autor da página: Arthur Rodrigues
+-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso Top 6</title>
-    <link rel="stylesheet" href="../css/top6.css">
+    <title>WeCine - Nosso TOP 6</title>
     <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/top6.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div id="conteudo-principal">
+    <div class="desktop-container">
+
         <header id="menu">
             <nav id="menu-nav" aria-label="Navegação principal">
                 <div>
                     <button id="btn-menu" role="button" aria-label="Abrir menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true"><path fill="rgb(255, 255, 255)" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
+                            <path fill="rgb(255, 255, 255)"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        </svg>
                     </button>
                 </div>
                 <div id="logo-div">
-                    <a href="index.html"><img id="logo" src="../images/logo.png" alt="Logo do site"></a>
+                    <a href="/index.html"><img id="logo" src="../images/logo.png" alt="Logo do site"></a>
                 </div>
                 <div id="busca">
                     <div>
@@ -36,12 +48,12 @@
                 <h1>WECINE</h1>
                 <nav>
                     <ul>
-                        <li><a href="https://camila12301540.github.io/WeCine/">Página inicial</a></li>
+                       <li><a href="../index.html">Página inicial</a></li>
                         <li><a href="grid.html">Grade de gênero</a></li>
-                        <li><a href="#">Nosso TOP 6</a></li>
-                        <li><a href="#">Filme do momento</a></li>
-                        <li><a href="#">Mapas</a></li>
-                        <li><a href="#">Formulário</a></li>
+                        <li><a href="tabela.html">Nosso TOP 6</a></li>
+                        <li><a href="filme-do-momento.html">Filme do momento</a></li>
+                        <li><a href="mapas.html">Mapas</a></li>
+                        <li><a href="formulario.html">Formulário</a></li>
                         <li>
                             <div class="compra-container">
                                 <p class="compra-titulo">Compre seu ingresso</p>
@@ -49,163 +61,249 @@
                                 <button class="btn-comprar">Comprar agora</button>
                             </div>
                         </li>
-                        <li><a href="#">Página sobre</a></li>
+                        <li><a href="sobre.html">Página sobre</a></li>
                     </ul>
                 </nav>
             </div>
         </aside>
-        <section>
-           <div class="container-banner">
-                <div id="span">
-                    <span>Nós da WeCine selecionamos 6 filmes, um de cada gênero, para você explorar!</span>
+
+        <main class="main-content">
+
+            <section class="hero-section">
+                <img class="hero-bg" src="../images/image 59.png">
+                <div class="hero-text">
+                    <h1 class="hero-title">NOSSO TOP 6</h1>
+                    <img class="trophy" src="../images/image-removebg-preview 1.png">
                 </div>
-                <img src="../images/nossoTop6.png" alt="Nosso Top 6">
+                <div class="hero-box">
+                    <p>Nós da WeCine selecionamos 6 filmes, um de cada gênero, para você explorar!</p>
+                </div>
+            </section>
+
+            <section class="genre-section genre-left">
+                <div class="genre-tabs">
+                    <span class="tab tab-active">AÇÃO</span>
+                    <span class="tab">ANIMAÇÃO</span>
+                    <span class="tab">COMÉDIA</span>
+                    <span class="tab">DRAMA</span>
+                    <span class="tab">ROMANCE</span>
+                    <span class="tab">TERROR</span>
+                </div>
+                <div class="genre-body">
+                    <div class="genre-label-group left">
+                        <span class="genre-name">AÇÃO</span>
+                    </div>
+                    <img class="genre-img" src="../images/image 75.png" alt="Ação">
+                </div>
+            </section>
+
+            <section class="genre-section genre-right">
+                <div class="genre-tabs genre-tabs-right">
+                    <span class="tab">AÇÃO</span>
+                    <span class="tab tab-active">ANIMAÇÃO</span>
+                    <span class="tab">COMÉDIA</span>
+                    <span class="tab">DRAMA</span>
+                    <span class="tab">ROMANCE</span>
+                    <span class="tab">TERROR</span>
+                </div>
+                <div class="genre-body">
+                    <img class="genre-img" src="../images/image 70.png" alt="Animação">
+                    <div class="genre-label-group right">
+                        <span class="genre-name">ANIMAÇÃO</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="genre-section genre-left">
+                <div class="genre-tabs">
+                    <span class="tab">AÇÃO</span>
+                    <span class="tab">ANIMAÇÃO</span>
+                    <span class="tab tab-active">COMÉDIA</span>
+                    <span class="tab">DRAMA</span>
+                    <span class="tab">ROMANCE</span>
+                    <span class="tab">TERROR</span>
+                </div>
+                <div class="genre-body">
+                    <div class="genre-label-group left">
+                        <span class="genre-name">COMÉDIA</span>
+                    </div>
+                    <img class="genre-img" src="../images/image 76.png" alt="Comédia">
+                </div>
+            </section>
+
+            <section class="table-section">
+                <div class="table-wrapper">
+                    <table class="filmes-table">
+                        <thead>
+                            <tr>
+                                <th class="th-label">INFOS</th>
+                                <th>FILME 01</th>
+                                <th>FILME 02</th>
+                                <th>FILME 03</th>
+                                <th>FILME 04</th>
+                                <th>FILME 05</th>
+                                <th>FILME 06</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="row-genero">
+                                <td class="td-label">GÊNERO</td>
+                                <td>AÇÃO</td>
+                                <td>ANIMAÇÃO</td>
+                                <td>COMÉDIA</td>
+                                <td>DRAMA</td>
+                                <td>ROMANCE</td>
+                                <td>TERROR</td>
+                            </tr>
+                            <tr class="row-poster">
+                                <td class="td-label">POSTER</td>
+                                <td><img src="../images/image 92.png" alt="Jogos Vorazes: Em Chamas" class="poster-img">
+                                </td>
+                                <td><img src="../images/image 103.png" alt="Enrolados" class="poster-img"></td>
+                                <td><img src="../images/image 104.png" alt="Click" class="poster-img"></td>
+                                <td><img src="../images/image 105.png" alt="Cisne Negro" class="poster-img"></td>
+                                <td><img src="../images/image 106.png" alt="O Fabricante de Lágrimas"
+                                        class="poster-img"></td>
+                                <td><img src="../images/image 107.png" alt="Terror em Silent Hill" class="poster-img">
+                                </td>
+                            </tr>
+                            <tr class="row-nome">
+                                <td class="td-label">NOME</td>
+                                <td>Jogos Vorazes: Em chamas</td>
+                                <td>Enrolados</td>
+                                <td>Click</td>
+                                <td>Cisne Negro</td>
+                                <td>O Fabricante de Lágrimas</td>
+                                <td>Terror em Silent Hill</td>
+                            </tr>
+                            <tr class="row-nota">
+                                <td class="td-label">NOTA</td>
+                                <td>4,5 <img src="../images/image 64.png" alt="estrela" class="star-icon"></td>
+                                <td>4,4 <img src="../images/image 64.png" alt="estrela" class="star-icon"></td>
+                                <td>4,1 <img src="../images/image 64.png" alt="estrela" class="star-icon"></td>
+                                <td>4,4 <img src="../images/image 64.png" alt="estrela" class="star-icon"></td>
+                                <td>2,8 <img src="../images/image 64.png" alt="estrela" class="star-icon"></td>
+                                <td>3,8 <img src="../images/image 64.png" alt="estrela" class="star-icon"></td>
+                            </tr>
+                            <tr class="row-duracao">
+                                <td class="td-label">DURAÇÃO</td>
+                                <td>2H26MIN</td>
+                                <td>1H41MIN</td>
+                                <td>1H47MIN</td>
+                                <td>1H43MIN</td>
+                                <td>1H43MIN</td>
+                                <td>2H05MIN</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="genre-section genre-right">
+                <div class="genre-tabs genre-tabs-right">
+                    <span class="tab">AÇÃO</span>
+                    <span class="tab">ANIMAÇÃO</span>
+                    <span class="tab">COMÉDIA</span>
+                    <span class="tab tab-active">DRAMA</span>
+                    <span class="tab">ROMANCE</span>
+                    <span class="tab">TERROR</span>
+                </div>
+                <div class="genre-body">
+                    <img class="genre-img" src="../images/image 77.png" alt="Drama">
+                    <div class="genre-label-group right">
+                        <span class="genre-name">DRAMA</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="genre-section genre-left">
+                <div class="genre-tabs">
+                    <span class="tab">AÇÃO</span>
+                    <span class="tab">ANIMAÇÃO</span>
+                    <span class="tab">COMÉDIA</span>
+                    <span class="tab">DRAMA</span>
+                    <span class="tab tab-active">ROMANCE</span>
+                    <span class="tab">TERROR</span>
+                </div>
+                <div class="genre-body">
+                    <div class="genre-label-group left">
+                        <span class="genre-name">ROMANCE</span>
+                    </div>
+                    <img class="genre-img" src="../images/image 78.png" alt="Romance">
+                </div>
+            </section>
+
+            <section class="genre-section genre-right">
+                <div class="genre-tabs genre-tabs-right">
+                    <span class="tab">AÇÃO</span>
+                    <span class="tab">ANIMAÇÃO</span>
+                    <span class="tab">COMÉDIA</span>
+                    <span class="tab">DRAMA</span>
+                    <span class="tab">ROMANCE</span>
+                    <span class="tab tab-active">TERROR</span>
+                </div>
+                <div class="genre-body">
+                    <img class="genre-img" src="../images/image 74.png" alt="Terror">
+                    <div class="genre-label-group right">
+                        <span class="genre-name">TERROR</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div id="footer-div">
+                <div id="div-logo">
+                    <h1>WeCine</h1>
+                    <span>Descubra, avalie e viva o cinema em BH</span>
+                </div>
+                <div id="footer-links">
+                    <div>
+                        <span>
+                            <h2>Navegação</h2>
+                        </span>
+                        <span>
+                            <ul>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Filmes</a></li>
+                                <li><a href="#">Ingressos</a></li>
+                                <li><a href="#">Sobre nós</a></li>
+                                <li><a href="#">Contato</a></li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div id="institucional">
+                        <span>
+                            <h2>Institucional</h2>
+                        </span>
+                        <span>
+                            <ul>
+                                <li><a href="#">Quem Somos</a></li>
+                                <li><a href="#">Trabalhe conosco</a></li>
+                                <li><a href="#">Política de Privacidade</a></li>
+                                <li><a href="#">Termos de Uso</a></li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <h2>Contato</h2>
+                        </span>
+                        <span>
+                            <ul>
+                                <li>contato@wecine.com.br</li>
+                                <li>(31) 99999-9999</li>
+                                <li>Belo Horizonte - MG</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
             </div>
-           <div class="imagens">
-                <img src="../images/top6Acao.png" alt="">
-                <img class="na-direita" src="../images/top6Animacao.png" alt="">
-                <img src="../images/top6Comedia.png" alt="">
-           </div>
-
-           <div id="tabela">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>INFOS</th>
-                            <th>FILME 01</th>
-                            <th>FILME 02</th>
-                            <th>FILME 03</th>
-                            <th>FILME 04</th>
-                            <th>FILME 05</th>
-                            <th>FILME 06</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="titulo">GÊNERO</td>
-                            <td>Ação</td>
-                            <td>Animação</td>
-                            <td>Comédia</td>
-                            <td>Drama</td>
-                            <td>Romance</td>
-                            <td>Terror</td>
-                        </tr>
-                        <tr>
-                            <td class="titulo">PÔSTER</td>
-                            <td>
-                                <div class="poster"><img src="../images/acao_tabela.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="poster"><img src="../images/animacao_tabela.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="poster"><img src="../images/comedia_tabela.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="poster"><img src="../images/drama_tabela.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="poster"><img src="../images/romance_tabela.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="poster"><img src="../images/terror_tabela.png" alt=""></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="titulo">NOME</td>
-                            <td>Jogos Vorazes: Em chamas</td>
-                            <td>Enrolados</td>
-                            <td>Click</td>
-                            <td>Cisne Negro</td>
-                            <td>O Fabricante de Lágrimas</td>
-                            <td>Terror em Silent Hill</td>
-                        </tr>
-                        <tr>
-                            <td class="titulo">NOTA</td>
-                            <td>
-                                <div class="notas">4.5<img src="../images/estrelaicon.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="notas">4.4<img src="../images/estrelaicon.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="notas">4.1<img src="../images/estrelaicon.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="notas">4.4<img src="../images/estrelaicon.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="notas">2.8<img src="../images/estrelaicon.png" alt=""></div>
-                            </td>
-                            <td>
-                                <div class="notas">3.8<img src="../images/estrelaicon.png" alt=""></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="titulo">DURAÇÃO</td>
-                            <td>2H26MIN</td>
-                            <td>1H41MIN</td>
-                            <td>1H47MIN</td>
-                            <td>1H43MIN</td>
-                            <td>1H43MIN</td>
-                            <td>2H05MIN</td>
-                        </tr>
-                    </tbody>
-                </table>
-           </div>
-
-           <div class="imagens">
-                <img class="na-direita" src="../images/top6Drama.png" alt="">
-                <img src="../images/top6Romance.png" alt="">
-                <img class="na-direita" src="../images/top6Terror.png" alt="">
-           </div>
-           <br>
-        </section>
+        </footer>
     </div>
 
-    <footer>
-        <div id="footer-div">
-            <div id="div-logo">
-                <h1>WeCine</h1>
-                <span>Descubra, avalie e viva o cinema em BH</span>
-            </div>
-            <div id="footer-links">
-                <div>
-                    <span><h2>Navegação</h2></span>
-                    <span>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Filmes</a></li>
-                            <li><a href="#">Ingressos</a></li>
-                            <li><a href="#">Sobre nós</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                    </span> 
-                </div>
-                <div id="institucional">
-                    <span><h2>Institucional</h2></span>
-                    <span>
-                        <ul>
-                            <li><a href="#">Quem Somos</a></li>
-                            <li><a href="#">Trabalhe conosco</a></li>
-                            <li><a href="#">Política de Privacidade</a></li>
-                            <li><a href="#">Termos de Uso</a></li>
-                        </ul>
-                    </span>
-                </div>
-                <div>
-                    <span><h2>Contato</h2></span>
-                    <span>
-                        <ul>
-                            <li>contato@wecine.com.br</li>
-                            <li>(31) 99999-9999</li>
-                            <li>Belo Horizonte - MG</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="../js/top6.js"></script>
+    <script src="../js/tabela.js"></script>
 </body>
+
 </html>
