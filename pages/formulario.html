@@ -63,7 +63,7 @@
                     <p><strong>CRIE UMA CONTA</strong></p>
                     <p>Acesse avaliações, compre ingressos e veja os cinemas que estão pertinho de você!</p>
 
-                    <div id="card-1-content">
+                    <form id="card-1-content" method="POST" action="">
                         <label for="nome">Seu nome completo</label>
                         <input type="text" id="nome" name="nome" required>
                         <label for="email">Seu email</label>
@@ -73,7 +73,7 @@
                         <label for="senha">Crie uma senha</label>
                         <input type="password" id="senha" name="senha" required>
                         <button type="submit">Cadastre-se</button>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="formulario-card" id="card-2">
@@ -81,7 +81,7 @@
                     <p><strong>INFORME SEUS INTERESSES</strong></p>
                     <p>Conte para a gente o que você mais gosta - estamos curiosos para saber!</p>
 
-                    <div id="card-2-content">
+                    <form id="card-2-content" method="GET" action="">
                         <label>Seu gênero favorito</label>
                         <div class="custom-select-container">
                             <input type="hidden" name="genero" id="genero-selecionado">
@@ -100,7 +100,7 @@
                         <label for="ator">Seu/sua ator/atriz favorito(a)</label>
                         <input type="text" id="ator" name="ator" required>
                         <button type="submit">Enviar</button>
-                    </div>
+                    </form>
                 </div>
                 <img src="../images/formulario_card_2.png" alt="Formulário de interesses">
             </div>
