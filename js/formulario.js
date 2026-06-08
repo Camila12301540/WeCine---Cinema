@@ -67,7 +67,7 @@ if (formCadastro) {
             const celular = document.getElementById('celular')?.value || '';
             const senha = document.getElementById('senha')?.value || '';
             console.log('Cadastro enviado:', { nome, email, celular, senha });
-            alert('Cadastro realizado com sucesso! (Demonstração)');
+            alert('Cadastro realizado com sucesso! (Demonstraçã');
         });
     }
 }
@@ -81,7 +81,7 @@ if (formInteresses) {
             const filme = document.getElementById('filme')?.value || '';
             const ator = document.getElementById('ator')?.value || '';
             console.log('Interesses enviados:', { genero, filme, ator });
-            alert('Interesses enviados com sucesso! (Demonstração)');
+            alert('Interesses enviados com sucesso!');
         });
     }
 }
