@@ -65,7 +65,7 @@ if (formCadastro) {
         const celular = document.getElementById('celular')?.value || '';
         const senha = document.getElementById('senha')?.value || '';
         
-        const params = new URLSearchParams({ nome, email, celular, senha, cadastro: 'sucesso' });
+        const params = new URLSearchParams({ nome, email, celular, senha, tipoForm: 'cadastro' });
         window.location.search = params.toString();
     });
 }
@@ -75,17 +75,22 @@ if (formInteresses) {
         const hiddenInput = document.getElementById('genero-selecionado');
         if (hiddenInput && !hiddenInput.value) {
             e.preventDefault();
-            alert('Por favor, selecione um gênero!');
+            alert('Por favor, selecione um gênero favorito!');
+            return;
         }
+        
+        const currentUrl = new URL(window.location.href);
+        currentUrl.searchParams.set('tipoForm', 'interesses');
     });
 }
 
 window.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
+    const tipoForm = urlParams.get('tipoForm');
 
-    if (urlParams.has('cadastro')) {
+    if (tipoForm === 'cadastro' || urlParams.has('nome')) {
         alert('Cadastro realizado com sucesso!');
-    } else if (urlParams.has('genero-selecionado') || urlParams.has('filme')) {
+    } else if (tipoForm === 'interesses' || urlParams.has('genero')) {
         alert('Interesses enviados com sucesso!');
     }
 });
