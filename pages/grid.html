@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade de Gênero</title>
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="icon" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="conteudo-principal">
+        <header id="menu">
+            <nav id="menu-nav" aria-label="Navegação principal">
+                <div>
+                    <button id="btn-menu" role="button" aria-label="Abrir menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true"><path fill="rgb(255, 255, 255)" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                    </button>
+                </div>
+                <div id="logo-div">
+                    <a href="index.html"><img id="logo" src="../images/logo.png" alt="Logo do site"></a>
+                </div>
+                <div id="busca">
+                    <div>
+                        <input id="search-input" type="search" placeholder="Buscar">
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <aside id="menu-lateral">
+            <div id="menu-lateral-content">
+                <button id="btn-fechar">&times;</button>
+                <h1>WECINE</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Página inicial</a></li>
+                        <li><a href="grid.html">Grade de gênero</a></li>
+                        <li><a href="#">Nosso TOP 6</a></li>
+                        <li><a href="#">Filme do momento</a></li>
+                        <li><a href="#">Mapas</a></li>
+                        <li><a href="#">Formulário</a></li>
+                        <li>
+                            <div class="compra-container">
+                                <p class="compra-titulo">Compre seu ingresso</p>
+                                <p class="compra-descricao">Garantimos os melhores lugares para você!</p>
+                                <button class="btn-comprar">Comprar agora</button>
+                            </div>
+                        </li>
+                        <li><a href="#">Página sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <section id="content">
+            <br>
+            <nav id="images">
+                <img src="../images/pipoca.png" alt="Pipoca" id="pipoca">
+                
+                <div class="grade-container">
+                    <img id="grade" src="../images/gradeGeneroAcao.png" alt="Grade de gêneros">
+                    
+                    <nav id="menu-grade" aria-label="Gêneros">
+                        <div>
+                            <a href="#" class="acao ativo" data-genero="gradeGeneroAcao.png"><div>Ação</div></a>
+                            <a href="#" class="animacao" data-genero="gradeGeneroAnimacao.png"><div>Animação</div></a>
+                            <a href="#" class="comedia" data-genero="gradeGeneroComedia.png"><div>Comédia</div></a>
+                            <a href="#" class="drama" data-genero="gradeGeneroDrama.png"><div>Drama</div></a>
+                            <a href="#" class="romance" data-genero="gradeGeneroRomance.png"><div>Romance</div></a>
+                            <a href="#" class="terror" data-genero="gradeGeneroTerror.png"><div>Terror</div></a>
+                        </div>
+                    </nav>
+                </div>
+                
+                <div class="decoracao-vazia"></div>
+            </nav>
+            
+            <section id="info-genero">
+                <p id="descricao-genero"></p>
+            </section>
+            <section id="filmes-recomendados1">
+                <div></div>
+            </section>
+            <section id="filmes-recomendados2">
+                <div></div>
+            </section>
+            <section id="filmes-recomendados3">
+                <div></div>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <div id="footer-div">
+            <div id="div-logo">
+                <h1>WeCine</h1>
+                <span>Descubra, avalie e viva o cinema em BH</span>
+            </div>
+            <div id="footer-links">
+                <div>
+                    <span><h2>Navegação</h2></span>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Ingressos</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div id="institucional">
+                    <span><h2>Institucional</h2></span>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span><h2>Contato</h2></span>
+                    <ul>
+                        <li>contato@wecine.com.br</li>
+                        <li>(31) 99999-9999</li>
+                        <li>Belo Horizonte - MG</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/grid.js"></script>
+</body>
+</html>
