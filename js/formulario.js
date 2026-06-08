@@ -58,30 +58,34 @@ const formCadastro = document.querySelector('#card-1-content');
 const formInteresses = document.querySelector('#card-2-content');
 
 if (formCadastro) {
-    formCadastro.addEventListener('submit', () => {
+    formCadastro.addEventListener('submit', function(e) {
+        e.preventDefault();
         const nome = document.getElementById('nome')?.value || '';
         const email = document.getElementById('email')?.value || '';
         const celular = document.getElementById('celular')?.value || '';
         const senha = document.getElementById('senha')?.value || '';
-        console.log('Enviando Cadastro:', { nome, email, celular, senha });
+        
+        const params = new URLSearchParams({ nome, email, celular, senha, cadastro: 'sucesso' });
+        window.location.search = params.toString();
     });
 }
 
 if (formInteresses) {
-    formInteresses.addEventListener('submit', () => {
-        const genero = document.getElementById('genero-selecionado')?.value || '';
-        const filme = document.getElementById('filme')?.value || '';
-        const ator = document.getElementById('ator')?.value || '';
-        console.log('Enviando Interesses:', { genero, filme, ator });
+    formInteresses.addEventListener('submit', function(e) {
+        const hiddenInput = document.getElementById('genero-selecionado');
+        if (hiddenInput && !hiddenInput.value) {
+            e.preventDefault();
+            alert('Por favor, selecione um gênero!');
+        }
     });
 }
 
 window.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
 
-    if (urlParams.has('nome')) {
+    if (urlParams.has('cadastro')) {
         alert('Cadastro realizado com sucesso!');
-    } else if (urlParams.has('genero') || urlParams.has('filme')) {
+    } else if (urlParams.has('genero-selecionado') || urlParams.has('filme')) {
         alert('Interesses enviados com sucesso!');
     }
 });
