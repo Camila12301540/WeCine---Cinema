@@ -282,6 +282,8 @@ button {
     justify-content: center;
     gap: 20px;
     padding: 40px 0;
+    max-width: 500px;
+
 }
 
 #conteudo>nav>a {
