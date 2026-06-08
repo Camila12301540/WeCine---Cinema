@@ -1,1 +1,1 @@
-# WeCine---Cinema
+# WeCine-Cinema
