@@ -1,42 +1,25 @@
 const btnMenu = document.getElementById('btn-menu');
 const btnFechar = document.getElementById('btn-fechar');
 const menuLateral = document.getElementById('menu-lateral');
+const overlay = document.getElementById('overlay');
 
 if (btnMenu && btnFechar && menuLateral) {
     btnMenu.addEventListener('click', () => {
         menuLateral.classList.add('ativo');
+        if (overlay) overlay.classList.add('ativo');
     });
 
-    btnFechar.addEventListener('click', () => {
-        menuLateral.classList.remove('ativo');
-    });
+    btnFechar.addEventListener('click', fechar);
+    if (overlay) overlay.addEventListener('click', fechar);
 
     document.querySelectorAll('#menu-lateral a').forEach(link => {
         link.addEventListener('click', () => {
-            menuLateral.classList.remove('ativo');
+            fechar();
         });
     });
 
-    document.addEventListener('click', function(e) {
-        if (menuLateral.classList.contains('ativo')) {
-            if (!menuLateral.contains(e.target) && !btnMenu.contains(e.target)) {
-                menuLateral.classList.remove('ativo');
-            }
-        }
-    });
+    function fechar() {
+        menuLateral.classList.remove('ativo');
+        if (overlay) overlay.classList.remove('ativo');
+    }
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    const iframeMapa = document.getElementById("mapa-cinema");
-    const botoesCinema = document.querySelectorAll(".btn-cinema");
-
-    botoesCinema.forEach(botao => {
-        botao.addEventListener("click", function() {
-            const novoMapaUrl = this.getAttribute("data-map");
-            
-            if (novoMapaUrl) {
-                iframeMapa.src = novoMapaUrl;
-            }
-        });
-    });
-});
