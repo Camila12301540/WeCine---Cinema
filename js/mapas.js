@@ -23,3 +23,14 @@ if (btnMenu && btnFechar && menuLateral) {
         if (overlay) overlay.classList.remove('ativo');
     }
 }
+
+// Fallback: forçar abertura dos links dos cinemas em nova aba
+document.querySelectorAll('.cinema-item').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const url = this.getAttribute('href');
+        if (url) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+    });
+});
