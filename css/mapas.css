@@ -387,6 +387,8 @@
  }
 
  .cinema-item {
+     display: block;
+     text-decoration: none;
      padding: 22px 0;
      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
      cursor: pointer;
@@ -418,6 +420,21 @@
      font-size: 0.85em;
      margin: 0;
      font-weight: 400;
+ }
+
+ .cinema-item.cinema-ativo {
+     padding-left: 14px;
+     border-left: 3px solid #FDFDAA;
+     background: rgba(253, 253, 170, 0.06);
+     border-radius: 0 6px 6px 0;
+ }
+
+ .cinema-item.cinema-ativo h2 {
+     color: #FDFDAA;
+ }
+
+ .cinema-item.cinema-ativo p {
+     color: rgba(255, 255, 255, 0.8);
  }
 
 
@@ -881,4 +898,4 @@
          font-size: 28px;
          margin: 15px 0 20px;
      }
-     }
+ }
