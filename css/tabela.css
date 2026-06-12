@@ -182,7 +182,7 @@ button {
     border-bottom: 1px solid rgba(255, 253, 170, 0.2);
 }
 
-#menu-lateral nav ul li a {
+.menu-item a {
     display: block;
     color: white;
     text-decoration: none;
@@ -192,12 +192,16 @@ button {
     transition: all 0.3s ease;
 }
 
-#menu-lateral nav ul li a:hover {
+.menu-item a:hover {
     background-color: rgba(255, 253, 170, 0.1);
     color: #FDFDAA;
     padding-left: 25px;
 }
 
+#menu-lateral nav ul li a:hover {
+    background-color: rgba(255, 253, 170, 0.1);
+    color: #FDFDAA;
+}
 .compra-container {
     padding: 20px 15px;
     background: rgba(255, 253, 170, 0.1);
