@@ -186,7 +186,7 @@ header,
     border-bottom: 1px solid rgba(255, 253, 170, 0.2);
 }
 
-.menu-item a {
+#menu-lateral nav ul li a {
     display: block;
     color: white;
     text-decoration: none;
@@ -196,15 +196,10 @@ header,
     transition: all 0.3s ease;
 }
 
-.menu-item a:hover {
-    background-color: rgba(255, 253, 170, 0.1);
-    color: #FDFDAA;
-    padding-left: 25px;
-}
-
 #menu-lateral nav ul li a:hover {
     background-color: rgba(255, 253, 170, 0.1);
     color: #FDFDAA;
+    padding-left: 25px;
 }
 
 .compra-container {
@@ -235,8 +230,6 @@ header,
     color: #A40B0B;
     border: none;
     padding: 10px 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
     width: 100%;
     display: inline-block;
     border-radius: 25px;
@@ -728,6 +721,24 @@ footer span {
         justify-content: center;
         margin-bottom: 30px;
     }
+
+    #mapa-wrapper {
+        width: 70%;
+        margin-left: 15%;
+        height: 380px;
+    }
+
+    #secao-cinemas {
+        grid-template-columns: 1fr;
+    }
+
+    #cinema-foto {
+        max-height: 400px;
+    }
+
+    #footer-div {
+        padding: 0 30px;
+    }
 }
 
 @media (max-width: 980px) {
@@ -772,6 +783,51 @@ footer span {
         max-width: 900px;
         margin-left: 0;
     }
+
+    #mapa-wrapper {
+        width: 85%;
+        margin-left: 7.5%;
+        height: 300px;
+    }
+
+    #lista-cinemas {
+        padding: 30px 25px;
+    }
+
+    #cinema-foto {
+        max-height: 350px;
+    }
+
+    footer {
+        height: auto;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #menu {
+        min-height: auto;
+        padding: 15px 0;
+    }
+
+    #mapa-wrapper {
+        width: 95%;
+        margin-left: 2.5%;
+        height: 250px;
+    }
+
+    #lista-cinemas {
+        padding: 20px 10px;
+    }
+
+    #faixa-ticker {
+        padding: 10px 0;
+    }
+
+    .ticker-item {
+        font-size: 0.9em;
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -789,6 +845,7 @@ footer span {
         flex-direction: column;
         align-items: center;
         border: none;
+        width: 100%;
     }
 
     #menu-nav svg:first-child {
@@ -842,41 +899,68 @@ footer span {
         box-sizing: border-box;
     }
 
+    #mapa-wrapper {
+        width: 95%;
+        margin-left: 2.5%;
+        height: 280px;
+    }
+
+    #lista-cinemas {
+        padding: 20px 15px;
+    }
+
+    .cinema-item h2 {
+        font-size: 1em;
+    }
+
+    .cinema-item p {
+        font-size: 0.8em;
+    }
+
+    #cinema-foto {
+        max-height: 300px;
+    }
+
+    #mapa-titulo span {
+        font-size: 1.2rem;
+    }
+
     footer {
         background-image: none !important;
         background-color: #A40B0B !important;
         height: auto !important;
-        padding: 45px 24px !important;
+        padding: 30px 20px !important;
         display: block !important;
+        margin-top: 20px;
     }
 
     #footer-div {
         grid-template-columns: 1fr !important;
         height: auto !important;
-        gap: 35px !important;
+        gap: 20px !important;
         padding: 0 !important;
     }
 
     footer h1 {
         color: #FDFDAA !important;
-        font-size: 2.6rem !important;
+        font-size: 2rem !important;
     }
 
     footer h2 {
         color: #ffffff !important;
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
 
     footer span,
     #footer-links a {
         color: #ffffff !important;
-        font-size: 1.25rem !important;
+        font-size: 1rem !important;
     }
 
     #footer-links {
         margin-left: 0 !important;
         grid-template-columns: 1fr !important;
-        gap: 35px !important;
+        gap: 20px !important;
     }
 }
 
@@ -902,6 +986,49 @@ footer span {
     #busca div input {
         padding: 6px 8px;
         font-size: 12px;
+    }
+
+    #mapa-wrapper {
+        width: 100%;
+        margin-left: 0;
+        height: 250px;
+    }
+
+    #lista-cinemas {
+        padding: 15px 10px;
+    }
+
+    .cinema-item {
+        padding: 15px 0;
+    }
+
+    .cinema-item h2 {
+        font-size: 0.9rem;
+    }
+
+    .cinema-item p {
+        font-size: 0.75rem;
+    }
+
+    #cinema-foto {
+        max-height: 250px;
+    }
+
+    .mapa-titulo span {
+        font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.5rem !important;
+    }
+
+    footer h2 {
+        font-size: 1rem !important;
+    }
+
+    footer span,
+    #footer-links a {
+        font-size: 0.9rem !important;
     }
 
     #btn-fechar {
