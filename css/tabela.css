@@ -249,7 +249,7 @@ button {
 }
 
 .btn-comprar:hover {
-    background-color: white;
+    background-color: #A40B0B;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
