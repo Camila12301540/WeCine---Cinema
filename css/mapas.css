@@ -644,67 +644,45 @@ footer span {
     }
 
     #menu-nav {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 100%;
-        border: none !important;
-        gap: 15px;
-    }
-
-    #menu-nav > div:first-child {
         display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    #menu-nav svg {
-        margin: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        border: none;
     }
 
     #logo-div {
-        margin: 0 !important;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        margin-bottom: 20px;
     }
 
     #logo {
-        max-height: 90px;
+        max-width: 150px;
         height: auto;
-        margin: 0 !important;
     }
 
     #busca {
         order: 3;
-        justify-content: center !important;
-        align-items: center !important;
+        justify-content: center;
         width: 100%;
     }
 
     #busca div {
-        width: 65%;
-        max-width: 260px;
-        margin: 0 auto !important;
-        background-color: #FDFDAA;
-        border-radius: 25px;
-        padding: 6px 15px;
-        display: flex;
-        align-items: center;
+        width: 70%;
+        max-width: 250px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     #busca div input {
+        padding: 8px 10px;
         font-size: 14px;
-        height: 25px;
+        height: auto;
         width: 100%;
-        text-align: left;
-        color: #494640;
+        box-sizing: border-box;
     }
-    
-    #busca div input::placeholder {
-        color: #A40B0B;
-        opacity: 0.5;
+
+    #hero img {
+        width: 100% !important;
+        height: auto !important;
     }
 
     .hero-section {
