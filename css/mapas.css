@@ -535,6 +535,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-family: "Montserrat", sans-serif;
     margin-top: auto;
     flex-shrink: 0;
     padding-top: 25px;
@@ -680,11 +681,6 @@ footer span {
         box-sizing: border-box;
     }
 
-    #hero img {
-        width: 100% !important;
-        height: auto !important;
-    }
-
     .hero-section {
         flex-direction: column;
         padding: 30px 20px 0;
@@ -692,7 +688,7 @@ footer span {
     }
 
     .hero-title {
-        font-size: 42px;
+        font-weight: 42px;
         line-height: 50px;
         white-space: normal;
     }
