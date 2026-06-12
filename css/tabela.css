@@ -139,6 +139,11 @@ button {
     transition: left 0.3s ease;
     z-index: 1000;
     overflow-y: auto;
+    scrollbar-width: none;
+}
+
+#menu-lateral::-webkit-scrollbar {
+    display: none;
 }
 
 #menu-lateral.ativo {
@@ -202,6 +207,7 @@ button {
     background-color: rgba(255, 253, 170, 0.1);
     color: #FDFDAA;
 }
+
 .compra-container {
     padding: 20px 15px;
     background: rgba(255, 253, 170, 0.1);
@@ -229,10 +235,8 @@ button {
     background-color: #FDFDAA;
     color: #A40B0B;
     border: none;
-    padding: 10px 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
+    padding: 15px 0;
+    width: 80%;
     display: inline-block;
     border-radius: 25px;
     font-weight: 700;
@@ -427,7 +431,6 @@ button {
     display: block;
 }
 
-
 .table-section {
     padding: 40px 4px;
     width: 100%;
@@ -519,7 +522,6 @@ button {
     vertical-align: middle;
     margin-left: 4px;
 }
-
 
 footer {
     width: 100%;
@@ -808,4 +810,4 @@ footer span {
         font-size: 32px;
         line-height: 38px;
     }
-    }
+}
