@@ -217,12 +217,18 @@ header,
     background-color: #FDFDAA;
     color: #A40B0B;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    display: inline-block;
     border-radius: 25px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 14px;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .btn-comprar:hover {
